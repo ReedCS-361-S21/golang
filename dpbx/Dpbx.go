@@ -1,5 +1,7 @@
 package dpbx
 
+import "sync"
+
 type Dpbx struct {
 	dropbox    int
 	empty      bool
