@@ -20,7 +20,7 @@ func New() (*Dpbx) {
 	return d
 }
 
-func (d *dbpx) Send(value int) {
+func (d *Dbpx) Send(value int) {
 	defer d.access.Unlock()
 	d.access.Lock()
 	for d.full {
